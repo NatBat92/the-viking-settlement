@@ -1,5 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
 
-h1 {
+body {
+    background-color: black;
+}
+
+header {
+    position: relative;
+    display: inline-block;
+}
+
+#title-image, h1 {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 5%;
+    text-align: center;
+    width: 100%;
+    color: black;
     font-family: "Macondo", sans-serif;
+    font-size: 175%;
+}
+
+#title-image h2 {
+    position: absolute;
+    color: black;
+    font-family: "Macondo", sans-serif;
+    font-size: 120%;
+    z-index: 999;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 15%;
+}
+
+#title-image h3 {
+    position: absolute;
+    color: white;
+    font-family: "Macondo", sans-serif;
+    font-size: 100%;
+    z-index: 999;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 25%;
 }
