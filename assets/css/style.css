@@ -4,6 +4,8 @@ body {
     background-color: black;
 }
 
+/* Headings and header image */
+
 header {
     position: relative;
     display: inline-block;
@@ -38,7 +40,7 @@ header {
 
 #title-image h3 {
     position: absolute;
-    color: white;
+    color: black;
     font-family: "Macondo", sans-serif;
     font-size: 100%;
     z-index: 999;
@@ -47,4 +49,25 @@ header {
     left: 0;
     right: 0;
     top: 25%;
+}
+
+/* Nav bar */
+
+a:link {
+    color: white;
+    font-family: "Macondo", sans-serif;
+    padding-right: 40px;
+    text-decoration: none;
+}
+
+a:visited {
+    color:blueviolet;
+}
+
+a:hover {
+    color: grey;
+}
+
+nav {
+    font-size: 120%;
 }
