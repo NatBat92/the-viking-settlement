@@ -2,89 +2,120 @@
 
 body {
     background-color: black;
+	font-family: 'Macondo', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
 }
 
-/* Headings and header image */
-
-header {
-    position: relative;
-    display: inline-block;
+* {
+	box-sizing: border-box;
 }
 
-#title-image, h1 {
-    position: absolute;
-    z-index: 999;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: 5%;
-    text-align: center;
-    width: 100%;
-    color: black;
-    font-family: "Macondo", sans-serif;
-    font-size: 175%;
-}
-
-#title-image h2 {
-    position: absolute;
-    color: black;
-    font-family: "Macondo", sans-serif;
-    font-size: 120%;
-    z-index: 999;
-    text-align: center;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: 15%;
-}
-
-#title-image h3 {
-    position: absolute;
-    color: black;
-    font-family: "Macondo", sans-serif;
-    font-size: 100%;
-    z-index: 999;
-    text-align: center;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: 25%;
-}
-
-/* Nav bar */
-
-a:link {
+.headings {
     color: white;
-    font-family: "Macondo", sans-serif;
-    padding-right: 40px;
-    text-decoration: none;
 }
 
-a:visited {
-    color:blueviolet;
+/* ================= 
+  Nav Bar + Header
+==================== */
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-a:hover {
-    color: grey;
+h2,
+h3,
+a {
+	color: #34495e;
 }
 
-nav {
-    font-size: 120%;
+a {
+	text-decoration: none;
 }
 
-.accordion-tabs h2 {
-    position: absolute;
-    color: black;
-    font-family: "Macondo", sans-serif;
-    font-size: 100%;
-    z-index: 999;
-    text-align: center;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: 75%
+.logo {
+	margin: 0;
+	font-size: 1.45em;
 }
 
-.accordion-item h2 {
-    color: black;
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a:visited {
+    color: blueviolet;
+}
+
+.main-nav a {
+	color: #34495e;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.jumbotron {
+    background: url("../images/viking-settlement-image.jpg") no-repeat center;
+}
+
+.btn-primary {
+    background-color: black;
+    border-color: white;
+}
+
+.btn-primary:hover {
+    background-color: #a2a2a2;
+    border-color: black;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
 }
