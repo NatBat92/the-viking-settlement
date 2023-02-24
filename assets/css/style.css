@@ -71,3 +71,20 @@ a:hover {
 nav {
     font-size: 120%;
 }
+
+.accordion-tabs h2 {
+    position: absolute;
+    color: black;
+    font-family: "Macondo", sans-serif;
+    font-size: 100%;
+    z-index: 999;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 75%
+}
+
+.accordion-item h2 {
+    color: black;
+}
