@@ -93,6 +93,18 @@ a {
     border-color: black;
 }
 
+/* ================= 
+  Google Map Table
+==================== */
+
+#google-map {
+	text-align: center;
+}
+
+.location-page p {
+	color: white;
+}
+
 
 /* ================================= 
   Media Queries
